@@ -31,13 +31,18 @@
 	display: block
 	clear: both
 	content: ''
-.row 
+.row
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
 	position: relative
 	margin: 0 $gutter/2*(-1)
-	@extend %clearfix
-[class^="col-"]
-	float: $float
-	box-sizing: border-box
+.col
+  display: flex	
+  flex-direction: column
+	padding: 0 $gutter/2
+	min-height: 1px
+	position: relative
 .hidden
 	display: none
 .text-left
@@ -53,19 +58,8 @@
 	float: left
 .right
 	float: right
-@for $i from 1 through $grid-size
-	.col-#{$i}
-		width:  ( $i /$grid-size ) *100%
-		float: $float
-		padding: 0 $gutter/2
-		min-height: 1px
-		position: relative
 @each $slug, $size in $breakpoints
-	@media (max-width: #{$size})
+	@media (min-width: #{$size})
 		@for $i from 1 through $grid-size
-			.col-#{$slug}-#{$i}
+			.#{$slug}#{$i}
 				width:  ( $i /$grid-size ) *100%
-				float: $float
-				padding: 0 $gutter/2
-				min-height: 1px
-				position: relative

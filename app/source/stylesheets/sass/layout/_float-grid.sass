@@ -1,0 +1,58 @@
+//grid
+$grid-size: 12
+$breakpoints: ("x": 480px, "s": 768px, "m": 992px, "l": 1200px)
+$gutter: 30px
+$float: left
+$container-max-width: 1200px
+$container-min-width: 280px
+
+.container
+	width: 100%
+	max-width: $container-max-width
+	min-width: $container-min-width
+	margin: 0 auto
+	position: relative
+	min-height: 1px
+	padding: 0px $gutter/2
+.container-fluid
+	width: 100%
+	margin: 0 auto
+	padding: 0px $gutter/2
+	position: relative
+%clearfix:after
+	display: table
+	clear: both
+	content: ''
+.clearfix:after
+	display: table
+	clear: both
+	content: ''
+.row 
+	position: relative
+	margin: 0 $gutter/2*(-1)
+	@extend %clearfix
+.col
+	padding: 0 $gutter/2
+	min-height: 1px
+	position: relative
+.hidden
+	display: none
+.text-left
+	text-align: $float
+.text-center
+	text-align: center
+.center-block 
+	display: block
+	margin: 0 auto
+.text-right
+	text-align: right
+.left
+	float: left
+.right
+	float: right
+@each $slug, $size in $breakpoints
+	@media (min-width: #{$size})
+		@for $i from 1 through $grid-size
+			.#{$slug}#{$i}
+				width:  ( $i /$grid-size ) *100%
+				float: $float

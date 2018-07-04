@@ -82,33 +82,6 @@ input, textarea, select {
           appearance: none;
 }
 
-.inline-block {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.transition, input[type="submit"] {
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.source {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 12px;
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -119,41 +92,21 @@ input, textarea, select {
   padding: 0px 15px;
 }
 
-.container:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
 .container-fluid {
   width: 100%;
-  min-width: 280px;
-  max-width: 1164px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 0px 15px;
   position: relative;
 }
 
-.container-full-width {
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  float: none;
-  clear: both;
-}
-
 .row:after {
-  display: block;
+  display: table;
   clear: both;
   content: '';
 }
 
 .clearfix:after {
-  display: block;
+  display: table;
   clear: both;
   content: '';
 }
@@ -163,11 +116,10 @@ input, textarea, select {
   margin: 0 -15px;
 }
 
-[class^="col-"] {
-  float: left;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+.col {
+  padding: 0 15px;
+  min-height: 1px;
+  position: relative;
 }
 
 .hidden {
@@ -199,446 +151,206 @@ input, textarea, select {
   float: right;
 }
 
-.col-1 {
-  width: 8.33333%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-2 {
-  width: 16.66667%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-3 {
-  width: 25%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-4 {
-  width: 33.33333%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-5 {
-  width: 41.66667%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-6 {
-  width: 50%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-7 {
-  width: 58.33333%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-8 {
-  width: 66.66667%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-9 {
-  width: 75%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-10 {
-  width: 83.33333%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-11 {
-  width: 91.66667%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-.col-12 {
-  width: 100%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  position: relative;
-}
-
-@media (max-width: 2560px) {
-  .col-lg-1 {
+@media (min-width: 480px) {
+  .x1 {
     width: 8.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-2 {
+  .x2 {
     width: 16.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-3 {
+  .x3 {
     width: 25%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-4 {
+  .x4 {
     width: 33.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-5 {
+  .x5 {
     width: 41.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-6 {
+  .x6 {
     width: 50%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-7 {
+  .x7 {
     width: 58.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-8 {
+  .x8 {
     width: 66.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-9 {
+  .x9 {
     width: 75%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-10 {
+  .x10 {
     width: 83.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-11 {
+  .x11 {
     width: 91.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-lg-12 {
+  .x12 {
     width: 100%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
 }
 
-@media (max-width: 992px) {
-  .col-md-1 {
+@media (min-width: 768px) {
+  .s1 {
     width: 8.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-2 {
+  .s2 {
     width: 16.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-3 {
+  .s3 {
     width: 25%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-4 {
+  .s4 {
     width: 33.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-5 {
+  .s5 {
     width: 41.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-6 {
+  .s6 {
     width: 50%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-7 {
+  .s7 {
     width: 58.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-8 {
+  .s8 {
     width: 66.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-9 {
+  .s9 {
     width: 75%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-10 {
+  .s10 {
     width: 83.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-11 {
+  .s11 {
     width: 91.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-md-12 {
+  .s12 {
     width: 100%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
 }
 
-@media (max-width: 768px) {
-  .col-sm-1 {
+@media (min-width: 992px) {
+  .m1 {
     width: 8.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-2 {
+  .m2 {
     width: 16.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-3 {
+  .m3 {
     width: 25%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-4 {
+  .m4 {
     width: 33.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-5 {
+  .m5 {
     width: 41.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-6 {
+  .m6 {
     width: 50%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-7 {
+  .m7 {
     width: 58.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-8 {
+  .m8 {
     width: 66.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-9 {
+  .m9 {
     width: 75%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-10 {
+  .m10 {
     width: 83.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-11 {
+  .m11 {
     width: 91.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-sm-12 {
+  .m12 {
     width: 100%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
 }
 
-@media (max-width: 480px) {
-  .col-xs-1 {
+@media (min-width: 1200px) {
+  .l1 {
     width: 8.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-2 {
+  .l2 {
     width: 16.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-3 {
+  .l3 {
     width: 25%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-4 {
+  .l4 {
     width: 33.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-5 {
+  .l5 {
     width: 41.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-6 {
+  .l6 {
     width: 50%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-7 {
+  .l7 {
     width: 58.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-8 {
+  .l8 {
     width: 66.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-9 {
+  .l9 {
     width: 75%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-10 {
+  .l10 {
     width: 83.33333%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-11 {
+  .l11 {
     width: 91.66667%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
-  .col-xs-12 {
+  .l12 {
     width: 100%;
     float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    position: relative;
   }
 }

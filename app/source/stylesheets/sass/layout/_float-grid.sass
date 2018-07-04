@@ -1,34 +1,30 @@
+//grid
+$grid-size: 12
+$breakpoints: ("x": 480px, "s": 768px, "m": 992px, "l": 1200px)
+$gutter: 30px
+$float: left
+$container-max-width: 1200px
+$container-min-width: 280px
+
 .container
-	width: $container-width
+	width: 100%
 	max-width: $container-max-width
 	min-width: $container-min-width
 	margin: 0 auto
 	position: relative
 	min-height: 1px
 	padding: 0px $gutter/2
-	&:after
-		display: block
-		clear: both
-		content: ''
 .container-fluid
-	width: $container-fluid-width
-	min-width: $container-fluid-min-width
-	max-width: $container-fluid-max-width
-	margin: 0 auto
-	box-sizing: border-box
-	position: relative
-.container-full-width
-	margin: 0 auto
-	box-sizing: border-box
 	width: 100%
-	float: none
-	clear: both
+	margin: 0 auto
+	padding: 0px $gutter/2
+	position: relative
 %clearfix:after
-	display: block
+	display: table
 	clear: both
 	content: ''
 .clearfix:after
-	display: block
+	display: table
 	clear: both
 	content: ''
 .row 
@@ -36,14 +32,13 @@
 	margin: 0 $gutter/2*(-1)
 	@extend %clearfix
 .col
-	width: 100%
 	padding: 0 $gutter/2
 	min-height: 1px
 	position: relative
 .hidden
 	display: none
 .text-left
-	text-align: left
+	text-align: $float
 .text-center
 	text-align: center
 .center-block 
@@ -60,4 +55,4 @@
 		@for $i from 1 through $grid-size
 			.#{$slug}#{$i}
 				width:  ( $i /$grid-size ) *100%
-				float: left
+				float: $float

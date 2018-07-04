@@ -82,21 +82,6 @@ input, textarea, select {
           appearance: none;
 }
 
-.source {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 12px;
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -107,41 +92,21 @@ input, textarea, select {
   padding: 0px 15px;
 }
 
-.container:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
 .container-fluid {
   width: 100%;
-  min-width: 280px;
-  max-width: 1164px;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 0px 15px;
   position: relative;
 }
 
-.container-full-width {
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  float: none;
-  clear: both;
-}
-
 .row:after {
-  display: block;
+  display: table;
   clear: both;
   content: '';
 }
 
 .clearfix:after {
-  display: block;
+  display: table;
   clear: both;
   content: '';
 }
@@ -152,7 +117,6 @@ input, textarea, select {
 }
 
 .col {
-  width: 100%;
   padding: 0 15px;
   min-height: 1px;
   position: relative;
@@ -188,204 +152,204 @@ input, textarea, select {
 }
 
 @media (min-width: 480px) {
-  .xs1 {
+  .x1 {
     width: 8.33333%;
     float: left;
   }
-  .xs2 {
+  .x2 {
     width: 16.66667%;
     float: left;
   }
-  .xs3 {
+  .x3 {
     width: 25%;
     float: left;
   }
-  .xs4 {
+  .x4 {
     width: 33.33333%;
     float: left;
   }
-  .xs5 {
+  .x5 {
     width: 41.66667%;
     float: left;
   }
-  .xs6 {
+  .x6 {
     width: 50%;
     float: left;
   }
-  .xs7 {
+  .x7 {
     width: 58.33333%;
     float: left;
   }
-  .xs8 {
+  .x8 {
     width: 66.66667%;
     float: left;
   }
-  .xs9 {
+  .x9 {
     width: 75%;
     float: left;
   }
-  .xs10 {
+  .x10 {
     width: 83.33333%;
     float: left;
   }
-  .xs11 {
+  .x11 {
     width: 91.66667%;
     float: left;
   }
-  .xs12 {
+  .x12 {
     width: 100%;
     float: left;
   }
 }
 
 @media (min-width: 768px) {
-  .sm1 {
+  .s1 {
     width: 8.33333%;
     float: left;
   }
-  .sm2 {
+  .s2 {
     width: 16.66667%;
     float: left;
   }
-  .sm3 {
+  .s3 {
     width: 25%;
     float: left;
   }
-  .sm4 {
+  .s4 {
     width: 33.33333%;
     float: left;
   }
-  .sm5 {
+  .s5 {
     width: 41.66667%;
     float: left;
   }
-  .sm6 {
+  .s6 {
     width: 50%;
     float: left;
   }
-  .sm7 {
+  .s7 {
     width: 58.33333%;
     float: left;
   }
-  .sm8 {
+  .s8 {
     width: 66.66667%;
     float: left;
   }
-  .sm9 {
+  .s9 {
     width: 75%;
     float: left;
   }
-  .sm10 {
+  .s10 {
     width: 83.33333%;
     float: left;
   }
-  .sm11 {
+  .s11 {
     width: 91.66667%;
     float: left;
   }
-  .sm12 {
+  .s12 {
     width: 100%;
     float: left;
   }
 }
 
 @media (min-width: 992px) {
-  .md1 {
+  .m1 {
     width: 8.33333%;
     float: left;
   }
-  .md2 {
+  .m2 {
     width: 16.66667%;
     float: left;
   }
-  .md3 {
+  .m3 {
     width: 25%;
     float: left;
   }
-  .md4 {
+  .m4 {
     width: 33.33333%;
     float: left;
   }
-  .md5 {
+  .m5 {
     width: 41.66667%;
     float: left;
   }
-  .md6 {
+  .m6 {
     width: 50%;
     float: left;
   }
-  .md7 {
+  .m7 {
     width: 58.33333%;
     float: left;
   }
-  .md8 {
+  .m8 {
     width: 66.66667%;
     float: left;
   }
-  .md9 {
+  .m9 {
     width: 75%;
     float: left;
   }
-  .md10 {
+  .m10 {
     width: 83.33333%;
     float: left;
   }
-  .md11 {
+  .m11 {
     width: 91.66667%;
     float: left;
   }
-  .md12 {
+  .m12 {
     width: 100%;
     float: left;
   }
 }
 
 @media (min-width: 1200px) {
-  .lg1 {
+  .l1 {
     width: 8.33333%;
     float: left;
   }
-  .lg2 {
+  .l2 {
     width: 16.66667%;
     float: left;
   }
-  .lg3 {
+  .l3 {
     width: 25%;
     float: left;
   }
-  .lg4 {
+  .l4 {
     width: 33.33333%;
     float: left;
   }
-  .lg5 {
+  .l5 {
     width: 41.66667%;
     float: left;
   }
-  .lg6 {
+  .l6 {
     width: 50%;
     float: left;
   }
-  .lg7 {
+  .l7 {
     width: 58.33333%;
     float: left;
   }
-  .lg8 {
+  .l8 {
     width: 66.66667%;
     float: left;
   }
-  .lg9 {
+  .l9 {
     width: 75%;
     float: left;
   }
-  .lg10 {
+  .l10 {
     width: 83.33333%;
     float: left;
   }
-  .lg11 {
+  .l11 {
     width: 91.66667%;
     float: left;
   }
-  .lg12 {
+  .l12 {
     width: 100%;
     float: left;
   }
